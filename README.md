@@ -6,16 +6,12 @@ A bright, kid-friendly single-page website with three big boxes. Tap a box and i
 
 Open `index.html` in a browser — no build step needed.
 
-## Adding your sounds
+## Sounds
 
-Drop your audio files into the `sounds/` folder with these names:
+| Box | Sound | File |
+| --- | --- | --- |
+| Pink | Goat | `sounds/goat.m4a` |
+| Yellow | Cat | `sounds/cat.m4a` |
+| Blue | Cow | `sounds/cow.m4a` |
 
-| Box | File |
-| --- | --- |
-| Pink | `sounds/sound1.mp3` |
-| Yellow | `sounds/sound2.mp3` |
-| Blue | `sounds/sound3.mp3` |
-
-Using different names or formats (`.wav`, `.ogg`)? Change the `data-sound` attribute on each box in `index.html`.
-
-Until the files are added, each box plays a short placeholder tune.
+To swap a sound, drop a new file into `sounds/` and update that box's `data-sound` attribute in `index.html`.
