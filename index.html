@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sound Boxes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <span class="cloud c1"></span>
+    <span class="cloud c2"></span>
+    <span class="cloud c3"></span>
+  </div>
+
+  <main>
+    <h1>
+      <span>T</span><span>a</span><span>p</span>
+      <span class="gap"></span>
+      <span>a</span>
+      <span class="gap"></span>
+      <span>B</span><span>o</span><span>x</span><span>!</span>
+    </h1>
+    <p class="subtitle">Every box makes a different sound 🎶</p>
+
+    <section class="boxes">
+      <!-- To use your own sounds, put the files in /sounds and update data-sound. -->
+      <button class="box box-pink" data-sound="sounds/sound1.mp3" data-fallback="0">
+        <span class="emoji">🐶</span>
+        <span class="label">Woof!</span>
+      </button>
+      <button class="box box-yellow" data-sound="sounds/sound2.mp3" data-fallback="1">
+        <span class="emoji">🐱</span>
+        <span class="label">Meow!</span>
+      </button>
+      <button class="box box-blue" data-sound="sounds/sound3.mp3" data-fallback="2">
+        <span class="emoji">🐸</span>
+        <span class="label">Ribbit!</span>
+      </button>
+    </section>
+  </main>
+
+  <div class="grass" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
