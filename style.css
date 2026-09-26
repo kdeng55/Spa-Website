@@ -140,6 +140,20 @@ h1 .gap { width: 0.35em; }
   outline-offset: 8px;
 }
 
+.mark {
+  position: relative;
+  font-size: clamp(4rem, 14vw, 8rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 6px 0 var(--edge);
+  transition: transform 0.15s ease;
+}
+
+.box:hover .mark {
+  transform: rotate(12deg) scale(1.1);
+}
+
 .box.playing {
   animation: bounce 0.6s ease;
 }
