@@ -71,3 +71,10 @@ document.querySelectorAll(".box").forEach((box) => {
     box.classList.add("playing");
   });
 });
+
+// Save the site for offline use.
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js");
+  });
+}
